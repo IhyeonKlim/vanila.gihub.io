@@ -63,7 +63,11 @@ body, html{
     position: absolute;
     top: 63%;
     left: 63%;
-    color:white
+    color:white;
+}
+#toDoInput{
+    height: 50px;
+    font-size: 1.3rem;
 }
 .effect {
     border: 3px solid gold;

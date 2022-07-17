@@ -2,7 +2,7 @@ const loginForm = document.querySelector("#login-form")
 const loginInput = document.querySelector("#login-input")
 const greeting = document.querySelector("#greeting")
 const knowing = document.querySelector("#knowing")
-const todoForm = document.querySelector(".todo-form")
+const todoInput = document.querySelector("#toDoInput")
 const USERNAME_KEY = "username"
 let username;
 const HIDDEN_CLASSNAME = "hidden"
@@ -15,8 +15,6 @@ if(savedUserName===null){
     greeting.classList.remove(HIDDEN_CLASSNAME)
     loginForm.addEventListener("submit", onLoginBtnClicked);
 }else{
-    todoForm.classList.remove(HIDDEN_CLASSNAME)
-    knowing.classList.add(HIDDEN_CLASSNAME)
     paintGreetings()
 }
 function onLoginBtnClicked(event) {
@@ -28,8 +26,10 @@ function onLoginBtnClicked(event) {
 }
 
 function paintGreetings(){
+    todoInput.classList.remove(HIDDEN_CLASSNAME)
+    knowing.classList.add(HIDDEN_CLASSNAME)
     const username = localStorage.getItem(USERNAME_KEY);
-    greeting.innerText = `Hello ${username}`;
+    greeting.innerText = `안녕하세요 ${username}님 !`;
     loginForm.classList.add(HIDDEN_CLASSNAME)
     greeting.classList.remove(HIDDEN_CLASSNAME)
 }
