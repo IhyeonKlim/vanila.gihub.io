@@ -22,7 +22,6 @@ if(savedUserName===null){
 function onLoginBtnClicked(event) {
     event.preventDefault();
     username = loginInput.value
-    alert(username)
     loginForm.classList.add(HIDDEN_CLASSNAME)
     localStorage.setItem(USERNAME_KEY, username)
     paintGreetings()
