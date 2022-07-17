@@ -2,6 +2,7 @@ const loginForm = document.querySelector("#login-form")
 const loginInput = document.querySelector("#login-input")
 const greeting = document.querySelector("#greeting")
 const knowing = document.querySelector("#knowing")
+const todoForm = document.querySelector(".todo-form")
 const USERNAME_KEY = "username"
 let username;
 const HIDDEN_CLASSNAME = "hidden"
@@ -14,6 +15,7 @@ if(savedUserName===null){
     greeting.classList.remove(HIDDEN_CLASSNAME)
     loginForm.addEventListener("submit", onLoginBtnClicked);
 }else{
+    todoForm.classList.remove(HIDDEN_CLASSNAME)
     knowing.classList.add(HIDDEN_CLASSNAME)
     paintGreetings()
 }
