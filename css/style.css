@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Jua&display=swap');
+
+.name_area, #quote{
+  font-family: 'Jua', sans-serif;
+}
+
+.wonderPlace{
+  font-family: 'Gamja Flower', cursive;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  color:white
+}
+#wonderPlace{
+    color:coral;
+    text-decoration: underline;
+}
+
+body, html{
+    height: 100%;
+
+}
+.clock-form{
+    position: absolute;
+    top: 5%;
+    left: 84%;
+    color:white
+}
+
+#clock{
+    font-size: 2.375rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.quotes{
+    font-family: 'Gamja Flower', cursive;
+    position: absolute;
+    top: 60%;
+    left:6%;
+    color:white   
+}
+.author{
+    font-size:1.2rem;
+}
+
+.wonderPlace{
+    color:white
+}
+.wonderPlace p{
+    color:white;
+    font-size:1.9rem;
+}
+.name_area{
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    color:white;
+    font-size: 2.375rem;
+}
+
+.todo-form{
+    position: absolute;
+    top: 48%;
+    left: 53%;
+    color:white
+}
+.effect {
+    border: 3px solid gold;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -khtml-border-radius: 7px;
+    -webkit-border-radius: 7px;
+}
+
+
+.underline {
+    background-color: transparent;
+    border: none;
+    border-bottom: 5px solid #fff;
+    color: #fff;
+    box-sizing: border-box;
+    font-family: 'Arvo';
+    font-size: 38px;
+    height: 50px;
+    left: 24%;
+    margin: -25px 0 0 -100px;
+    padding: 10px 0px;
+    position: relative;
+    top: 50%;
+    width: 500px;
+    text-align: center;
+}
+
+.todo-form input{
+    width: 500px;
+}
+.hidden{
+    display: none;
+}

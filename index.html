@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Momentum App</title>
+</head>
+<body>
+  <div class="background">
+    <div class="wonderPlace">
+      <p>추천하는 세계 자연경관 여행지는 <span id="wonderPlace"></span>입니다!</p>
+    </div>
+    <div class="name_area">
+      <h2 class="question" id="knowing">
+        당신의 이름을 알려주세요!
+      </h2>
+      <h1 class="hidden" id="greeting"></h1>
+      <form class="hidden" id="login-form">
+        <input type="text" id="login-input"class="underline"/>
+      </form>
+    </div>
+    <div class="clock-form">
+      <h2 id="date"></h2>
+      <h2 id="clock">00:00</h2>
+      <div id="weather">
+        <span ></span>
+        <span ></span>
+      </div>
+    </div>
+    <div class="todo-form">
+      <form id="todo-form">
+          <input type="text" placeholder="오늘의 할 일을 적어주세요." />
+      </form>
+      <ul id="todo-list">
+      </ul>      
+    </div>
+    <div class="quotes">
+      <div id="quote">
+        <span ></span>
+        <br>
+        <span class="author"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/greetings.js"></script>
+  <script src="js/todo.js"></script>
+  <script src="js/clock.js"></script>
+  <script src="js/quotes.js"></script>
+  <script src="js/background.js"></script>
+  <script src="js/wonderPlace.js"></script>
+  <script src="js/weather.js"></script>
+</body>
+</html>
